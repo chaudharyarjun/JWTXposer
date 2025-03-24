@@ -6,6 +6,7 @@
 
 <h1 align="center"> JWTXposer </h1>
 <h3 align="center">Automated JWT Discovery & Analysis Tool for Bug Bounty Hunters and Red Teamers</h3>
+![image](https://github.com/user-attachments/assets/59b21ece-53eb-4663-9051-3ac16d899c51)
 
 ---
 
