@@ -6,11 +6,12 @@
 
 <h1 align="center"> JWTXposer </h1>
 <h3 align="center">Automated JWT Discovery & Analysis Tool for Bug Bounty Hunters and Red Teamers</h3>
-![image](https://github.com/user-attachments/assets/59b21ece-53eb-4663-9051-3ac16d899c51)
+
 
 ---
 
 ##  What Is JWTXposer?
+![image](https://github.com/user-attachments/assets/9ef26fd8-6029-4049-98f7-f9ada770c4fe)
 
 **JWTXposer** is an **automated reconnaissance tool** that scans public archives like the **Wayback Machine**, extracts leaked **JWT tokens**, and decodes them to identify potentially exploitable information.
 
