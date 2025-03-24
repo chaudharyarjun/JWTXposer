@@ -41,14 +41,14 @@ These tokens may still:
 
 ##  Features
 
-✅ Scrapes **Wayback Machine** for archived endpoints  
-✅ Extracts JWTs from **URLs, query strings, and path parameters**  
-✅ **Automatically decodes** JWTs (no secret key required)  
-✅ Highlights **sensitive JWT claims** (userId, scope, authType, etc.)  
-✅ Checks for **live endpoints** that are still accessible  
-✅ Uses **multi-threading** for speed (configurable!)  
-✅ Saves results in structured **JSON output**  
-✅ Outputs colorized summary table using `rich`
+- Scrapes Wayback Machine for archived endpoints  
+- Extracts JWTs from URLs, query strings, and path parameters
+- Automatically decodes** JWTs (no secret key required)
+- Highlights sensitive JWT claims** (userId, scope, authType, etc.)
+- Checks for live endpoints that are still accessible
+- Uses `multi-threading` for speed (configurable!)
+- Saves results in structured JSON output
+- Outputs colorized summary table using `rich`
 ---
 
 ##  Demo
