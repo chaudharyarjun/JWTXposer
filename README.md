@@ -49,7 +49,7 @@ These tokens may still:
 - Uses `multi-threading` for speed (configurable!)
 - Saves results in structured JSON output
 - Outputs colorized summary table using `rich`
----
+
 
 ##  Demo
 
