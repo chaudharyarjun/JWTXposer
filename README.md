@@ -8,7 +8,7 @@
 <h3 align="center">Automated JWT Discovery & Analysis Tool for Bug Bounty Hunters and Red Teamers</h3>
 
 
----
+
 
 ##  What Is JWTXposer?
 ![image](https://github.com/user-attachments/assets/9ef26fd8-6029-4049-98f7-f9ada770c4fe)
@@ -23,7 +23,7 @@
 - 🕵️‍♂️ Token replay attacks
 - 🧬 Weak signing key discovery
 
----
+
 
 ## 🔍 Why JWTXposer Exists
 
@@ -37,7 +37,7 @@ These tokens may still:
 - Contain sensitive claims (like roles, user IDs, access tokens)
 - Be improperly validated (`alg: none`, expired tokens accepted)
 
----
+
 
 ##  Features
 
@@ -58,7 +58,7 @@ These tokens may still:
 ![jwt2](https://github.com/user-attachments/assets/3fdd1115-201b-41ba-839b-c411c2b73bc8)
 
 
----
+
 
 ##  Installation
 
@@ -72,7 +72,7 @@ cd JWTXposer
 pip install -r requirements.txt
 ```
 
----
+
 
 ## Output
 Results are saved in:
@@ -80,4 +80,12 @@ Results are saved in:
 jwt_results.json
 ```
 ![Jwtxposer_Output](https://github.com/user-attachments/assets/7b3070a6-7507-46c6-a6cf-08607da7e7ea)
+
+## Upcoming Features
+- Token replay testing (auto)
+- Burp Suite plugin mode
+- GitHub / Google dorking module
+- JWT fuzzing (role, alg, scope)
+- Anomaly detection on tokens (ML-based)
+
 
