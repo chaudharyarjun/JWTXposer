@@ -11,8 +11,9 @@
 
 ##  What Is JWTXposer?
 
-**JWTXposer** automates the painful, time-consuming process of finding and analyzing JWTs (JSON Web Tokens) leaked in public sources — especially in Wayback Machine archives.
+**JWTXposer** is an **automated reconnaissance tool** that scans public archives like the **Wayback Machine**, extracts leaked **JWT tokens**, and decodes them to identify potentially exploitable information.
 
+ Built specifically for **bug bounty hunters**, **red teamers**, and **CTF players**, JWTXposer eliminates manual JWT hunting and highlights **juicy claims** like `userId`, `access_token`, `scope`, `authType`, etc.
  It performs **automated passive recon**, **live endpoint analysis**, and **JWT decoding** to extract **juicy tokens** that may lead to:
 
 - 🔓 Broken access control
@@ -22,30 +23,59 @@
 
 ---
 
+## 🔍 Why JWTXposer Exists
+
+Many applications expose JWTs:
+- In old, archived endpoints (e.g. via Wayback Machine)
+- Inside query parameters or API paths
+- Embedded in URLs, JS files, or redirects
+
+These tokens may still:
+- Be valid for replay
+- Contain sensitive claims (like roles, user IDs, access tokens)
+- Be improperly validated (`alg: none`, expired tokens accepted)
+
+---
+
 ##  Features
 
-✅ Pulls **archived URLs** from Wayback Machine  
-✅ Detects JWTs in **query params**, **path**, **encoded formats**  
-✅ Decodes JWTs **without needing the secret key**  
-✅ Extracts **juicy info** like roles, user IDs, scopes, etc.  
-✅ Checks if JWT-carrying URLs are **still live**  
-✅ Saves everything in **JSON** and renders output with `rich`  
-✅ Supports **colored terminal output** for fast triage  
-✅ Plug-and-play with any domain (`*.api.target.com`, etc.)
-
+✅ Scrapes **Wayback Machine** for archived endpoints  
+✅ Extracts JWTs from **URLs, query strings, and path parameters**  
+✅ **Automatically decodes** JWTs (no secret key required)  
+✅ Highlights **sensitive JWT claims** (userId, scope, authType, etc.)  
+✅ Checks for **live endpoints** that are still accessible  
+✅ Uses **multi-threading** for speed (configurable!)  
+✅ Saves results in structured **JSON output**  
+✅ Outputs colorized summary table using `rich`
 ---
 
-## 📸 Demo
+##  Demo
 
 >  *Watch JWTXposer in action:*
+![JWTXP](https://github.com/user-attachments/assets/09b7bd0e-7495-4e35-b8b7-50663bc04eb4)
+![jwt2](https://github.com/user-attachments/assets/3fdd1115-201b-41ba-839b-c411c2b73bc8)
 
-![demo](https://user-images.githubusercontent.com/youruser/demo.gif)
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
 ###  Clone the repo
 ```bash
 git clone https://github.com/yourusername/JWTXposer.git
 cd JWTXposer
+```
+### Install Requirements
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Output
+Results are saved in:
+```bash
+jwt_results.json
+```
+![Jwtxposer_Output](https://github.com/user-attachments/assets/7b3070a6-7507-46c6-a6cf-08607da7e7ea)
+
